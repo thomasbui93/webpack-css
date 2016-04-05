@@ -1,0 +1,35 @@
+{
+  "name": "webpack-css",
+  "version": "0.0.1",
+  "description": "Utimate css workflow optimaztion and modernization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thomasbui93/webpack-css.git"
+  },
+  "keywords": [
+    "webpack",
+    "css",
+    "sass"
+  ],
+  "author": "thomasbui93@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomasbui93/webpack-css/issues"
+  },
+  "homepage": "https://github.com/thomasbui93/webpack-css#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.2",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.14"
+  }
+}

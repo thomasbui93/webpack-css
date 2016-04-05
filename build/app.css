@@ -1,2 +1,3 @@
-body {
-  color: black; }
+.container > :first-child + * + * + p.specific > span {
+   font-weight: bold;
+}

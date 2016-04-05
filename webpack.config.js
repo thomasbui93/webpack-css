@@ -2,10 +2,14 @@ const autoprefixer = require('autoprefixer')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 
+const cssnano = require('cssnano');
+const cssnext = require('postcss-cssnext');
+const precss = require('precss');
+const oldie = require('oldie');
+
 const scssLoaders = [
   'css-loader',
-  'postcss-loader',
-  'sass-loader?indentedSyntax=scss&includePaths[]=' + path.resolve(__dirname, './src')
+  'postcss-loader'
 ]
 
 const config = {
@@ -20,7 +24,7 @@ const config = {
         loaders: []
       },
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         loader: ExtractTextPlugin.extract('style-loader', scssLoaders.join('!'))
       }
     ]
@@ -34,9 +38,10 @@ const config = {
     new ExtractTextPlugin('[name].css')
   ],
   postcss: [
-    autoprefixer({
-      browsers: ['last 2 versions']
-    })
+    precss,
+    //cssnano,
+    cssnext,
+    oldie
   ],
   resolve: {
     extensions: ['', '.js', '.scss'],

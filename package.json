@@ -1,7 +1,7 @@
 {
   "name": "webpack-css",
   "version": "0.0.1",
-  "description": "Utimate css workflow optimaztion and modernization",
+  "description": "Utimate css workflow optimaztion and modernization with postcss",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,7 @@
   "keywords": [
     "webpack",
     "css",
-    "sass"
+    "postcss"
   ],
   "author": "thomasbui93@gmail.com",
   "license": "MIT",

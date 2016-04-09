@@ -39,7 +39,7 @@ const config = {
   ],
   postcss: [
     precss,
-    //cssnano,
+    cssnano,
     cssnext,
     oldie
   ],
